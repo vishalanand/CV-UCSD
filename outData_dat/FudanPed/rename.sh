@@ -1,0 +1,1 @@
+for f in *.dat; do mv "$f" "`echo $f | sed s/FudanPed-bbox-000/ground-/`"; done

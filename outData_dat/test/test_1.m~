@@ -1,0 +1,32 @@
+clc();
+path_test = '/home/va/some_codes/outData_dat/test_check/';
+pattern= fullfile(path_test,'*.dat');
+Files=dir(pattern);
+
+path_ground = '/home/va/some_codes/outData_dat/ground_check/';
+pattern= fullfile(path_ground,'*.dat');
+Files_ground=dir(pattern);
+
+for k=1:length(Files)
+   disp(Files(k).name);
+   if Files(k).name(1:1)=='.'
+       continue
+   end
+   open_file_test=strcat(path_test,Files(k).name);
+   ground_file = strrep(open_file_test, 'test', 'ground');
+   open_file_ground = strrep(open_file_test, 'test', 'ground');
+   disp(open_file_test);
+   disp(open_file_ground);
+   fileID_test = fopen(open_file_test,'r');
+   formatSpec = '%d';
+   test_values = fscanf(fileID_test,formatSpec);
+   fclose(fileID_test);
+   
+   fileID_ground = fopen(open_file_ground,'r');
+   formatSpec = '%d';
+   ground_values = fscanf(fileID_ground,formatSpec);
+   fclose(fileID_ground);
+   
+   %disp(test_values);
+   %disp(ground_values);
+end
