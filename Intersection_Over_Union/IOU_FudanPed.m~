@@ -1,11 +1,11 @@
 clc();
-%path_test = '<absolute path for the sample Fudan Pedestrian testing data>';
-path_test = '<absolute path for the Fudan Pedestrian testing data>>';
+%path_test = '<absolute path for the sample testing data>';
+path_test = '<absolute path for the testing data>>';
 pattern= fullfile(path_test,'*.dat');
 Files=dir(pattern);
 
-%path_ground = '<absolute path for the sample Fudan Pedestrian ground truth data>';
-path_ground = '<absolute path for the Fudan Pedestrian ground truth data>';
+%path_ground = '<absolute path for the sample ground truth data>';
+path_ground = '<absolute path for the ground truth data>';
 pattern= fullfile(path_ground,'*.dat');
 Files_ground=dir(pattern);
 total = 0;
