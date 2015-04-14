@@ -38,12 +38,12 @@ for k=1:length(Files)
        warning(strcat(ground_file,' does not exist'));
        continue;
    end
-   total = total+1;
    
    %disp(test_values);
    %disp(ground_values);
    idx = 1;
    while idx>0 & idx <= numel(test_values) & idx <= numel(ground_values)
+       total = total+1;
        x_p = test_values(idx);
        y_p = test_values(idx+1);
        width_p = test_values(idx+2);
