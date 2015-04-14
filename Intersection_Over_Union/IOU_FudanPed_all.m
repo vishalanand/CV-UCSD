@@ -1,7 +1,7 @@
 clc();
 %path_test = '/home/va/some_codes/outData_dat/test_check/';
-%path_test = '/home/va/some_codes/HPU1 data points/';
-path_test = '/home/va/some_codes/dataset/Data/FudanPed/refractored/';
+path_test = '/home/va/some_codes/HPU1 Fundan/';
+%path_test = '/home/va/some_codes/dataset/Data/FudanPed/refractored/';
 pattern= fullfile(path_test,'*.dat');
 Files=dir(pattern);
 
@@ -11,7 +11,7 @@ pattern= fullfile(path_ground,'*.dat');
 Files_ground=dir(pattern);
 total = 0;
 correct = 0;
-fileID_print = fopen('IOU_Fudan_CPU.dat','w');
+fileID_print = fopen('IOU_Fudan_HPU.dat','w');
 disp('Hello');
 
 for k=1:length(Files)
