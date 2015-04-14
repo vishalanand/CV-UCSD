@@ -11,7 +11,7 @@ pattern= fullfile(path_ground,'*.dat');
 Files_ground=dir(pattern);
 total = 0;
 correct = 0;
-fileID_print = fopen('IOU.dat','w');
+fileID_print = fopen('IOU_HPU.dat','w');
 disp('Hello');
 
 for k=1:length(Files)
