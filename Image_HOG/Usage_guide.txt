@@ -1,0 +1,5 @@
+The dataset used for these codes is taken from https://github.com/vishalanand/CV-UCSD/tree/master/Testing_Dataset/Data/FudanPed
+ and https://github.com/vishalanand/CV-UCSD/tree/master/Testing_Dataset/Data/PennPed
+ 
+# The bash scripts are then run to generate the box dimenstions in 
+ [x y w h] format
