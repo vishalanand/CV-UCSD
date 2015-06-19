@@ -1,4 +1,4 @@
-# Computer Vision - University of California, San Diego
+# Computer Vision - University of California, Santa Cruz
 
 ##Localization of humans, the first step
 
