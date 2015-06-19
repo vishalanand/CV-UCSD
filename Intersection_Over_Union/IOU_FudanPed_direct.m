@@ -68,7 +68,7 @@ for k=1:length(Files)
            correct = correct+1
            disp('Yes');
        else
-           fprintf(fileID_print,'%s Yes %f\n',Files(k).name,overlapArea);
+           fprintf(fileID_print,'%s No %f\n',Files(k).name,overlapArea);
            disp('No');
        end
        
