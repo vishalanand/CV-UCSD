@@ -23,11 +23,14 @@ The first step in the pipeline was to calculate the bounding box using an automa
 
 ### HPU EXPERIMENTS
 
-There were four HPU experiments conducted and the description is as follows:
+There were seven [HPU experiments](http://vishalanand.pythonanywhere.com) conducted and the description is as follows:
 * [HPU1](http://vishalanand.pythonanywhere.com/hpu1): Draw the bounding boxes without any prior CPU algorithm.
 * [HPU2](http://vishalanand.pythonanywhere.com/hpu2): Given a CPU algorithm, Click on all detected bounding boxes that do not contain pedestrians. It aims towards reducing the number of false positives
 * [HPU3](http://vishalanand.pythonanywhere.com/hpu3): Given a CPU prediction, Locate and draw bounding boxes around pedestrians that have NOT been detected. By doing this, we can increase the number of true positive and reduce the number of false negative.
 * [HPU4](http://vishalanand.pythonanywhere.com/hpu4): Given a CPU algorithm, click on objects not enclosed by bounding box. Then, the CPU chooses the bounding box from the predicted boxes below the threshold to place round it. This method achieves what HPU3 tries to, but in lesser average time. 
+* [HPU5](http://vishalanand.pythonanywhere.com/hpu5): Given a CPU algorithm, heuristic to check if showing each pedestrians per image in the order of higher confidence first weeds out false-positives better. 
+* [HPU6](http://vishalanand.pythonanywhere.com/hpu6): Given a CPU algorithm, heuristic to check if showing each pedestrians per image in the order of lower confidence first weeds out false-positives better. 
+* [HPU7](http://vishalanand.pythonanywhere.com/hpu7): Given a CPU algorithm, heuristic to check if showing each pedestrians per image in the order of alternating sequence of confidence weeds out false-positives better. 
 
 ### IOU CALCULATION
 The results are listed in the corresponding IOU calculation folders in the project.
@@ -36,7 +39,7 @@ The results are listed in the corresponding IOU calculation folders in the proje
 
 * [Anshu Aviral](https://github.com/cyclotronian)
 * [Vishal Anand](http://vishalanand.net)
-* Shweta Sharma
+* [Shweta Sharma](https://plus.google.com/u/0/117440107609842749002/about)
 * [Utkarsh Dwivedi](https://github.com/Utkarshdevd/)
 
 ### Guidance
