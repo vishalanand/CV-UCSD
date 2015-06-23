@@ -1,0 +1,31 @@
+<body bgcolor="#E6E6FA">
+<center>
+    <h2>Team : TuringTested</h2>
+    <h3>Pedestrian Detection and Analysis</h3>
+    <h3>Computer-Vision : UC-SantaCruz, Stanford University</h3>
+    <br/>
+    <br/>
+    <a href="hpu1"> HPU1</a><br/>
+    <a href="hpu2"> HPU2</a><br/>
+    <a href="hpu3"> HPU3</a><br/>
+    <a href="hpu4"> HPU4</a><br/>
+    <a href="hpu5"> HPU5</a><br/>
+    <a href="hpu6"> HPU6</a><br/>
+    <a href="hpu7"> HPU7</a><br/><br/>
+
+    <center><a href="https://github.com/vishalanand/Computer-Vision-UC-SantaCruz-Stanford" target="_blank">Code for CPU algorithm and the associated dataset</a></center>
+</center>
+<br/><br/>
+<h3>Legend</h3>
+<a href="hpu1">HPU1</a> : Draw the bounding boxes without any prior CPU algorithm.<br/>
+<a href="hpu2">HPU2</a> : Given a CPU algorithm, Click on all detected bounding boxes that do not contain pedestrians. It aims towards reducing the number of false positives<br/>
+<a href="hpu3">HPU3</a> : Given a CPU prediction, Locate and draw bounding boxes around pedestrians that have NOT been detected. By doing this, we can increase the number of true positive and reduce the number of false negative.<br/><br/>
+<a href="hpu4">HPU4</a> : Given a CPU algorithm, click on objects not enclosed by bounding box. Then, the CPU chooses the bounding box from the predicted boxes below the threshold to place round it. This method achieves what HPU3 tries to, but in lesser average time.<br/><br/>
+<a href="hpu5">HPU5</a> : Given a CPU algorithm, heuristic to check if showing each pedestrians per image in the order of higher confidence first weeds out false-positives better<br/>
+<a href="hpu6">HPU6</a> : Given a CPU algorithm, heuristic to check if showing each pedestrians per image in the order of lower confidence first weeds out false-positives better<br/>
+<a href="hpu7">HPU7</a> : Given a CPU algorithm, heuristic to check if showing each pedestrians per image in the order of alternating sequence of confidence weeds out false-positives better<br/>
+
+<h3>Guidance</h3>
+<a href="https://users.soe.ucsc.edu/~davis/" target="_blank">Prof. James Davis</a><br/>
+<a href="http://stanford.edu/~rvaish/" target="_blank">Rajan Vaish</a><br/>
+</body>
